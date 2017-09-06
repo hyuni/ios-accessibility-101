@@ -67,12 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				104B13561D56E07700F07826 /* AppDelegate.swift */,
-				1059FB811D5941C400B5BFE1 /* View Model */,
-				1059FB731D57DA2D00B5BFE1 /* Storyboards */,
-				10CE7ED41D57B23E007E1D96 /* Views */,
 				10CE7ECF1D57A791007E1D96 /* Controllers */,
 				10CE7ECE1D57A786007E1D96 /* Model */,
 				1059FB721D57DA1D00B5BFE1 /* Resources */,
+				1059FB731D57DA2D00B5BFE1 /* Storyboards */,
+				1059FB811D5941C400B5BFE1 /* View Model */,
+				10CE7ED41D57B23E007E1D96 /* Views */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -80,8 +80,8 @@
 		1059FB721D57DA1D00B5BFE1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				104B135D1D56E07700F07826 /* Assets.xcassets */,
 				104B13621D56E07700F07826 /* Info.plist */,
+				104B135D1D56E07700F07826 /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -89,8 +89,8 @@
 		1059FB731D57DA2D00B5BFE1 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				104B135A1D56E07700F07826 /* Main.storyboard */,
 				104B135F1D56E07700F07826 /* LaunchScreen.storyboard */,
+				104B135A1D56E07700F07826 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		10CE7ECF1D57A791007E1D96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				10CE7ED71D57B2BE007E1D96 /* RecipeListViewController.swift */,
 				1059FB7D1D5827B900B5BFE1 /* RecipeInstructionsViewController.swift */,
+				10CE7ED71D57B2BE007E1D96 /* RecipeListViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -124,8 +124,8 @@
 		10CE7ED41D57B23E007E1D96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				10CE7ED51D57B25F007E1D96 /* RecipeCell.swift */,
 				1059FB7F1D585AC100B5BFE1 /* InstructionCell.swift */,
+				10CE7ED51D57B25F007E1D96 /* RecipeCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
