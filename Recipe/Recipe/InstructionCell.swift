@@ -43,8 +43,13 @@ class InstructionCell: UITableViewCell {
     
     let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: text)
     
+    checkmarkButton.isAccessibilityElement = false
+    
     if strikeThrough {
-      attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+        descriptionLabel.accessibilityLabel = "Completed: \(text)"
+        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+    } else {
+        descriptionLabel.accessibilityLabel = "Uncompleted: \(text)"
     }
     
     checkmarkButton.isSelected = strikeThrough

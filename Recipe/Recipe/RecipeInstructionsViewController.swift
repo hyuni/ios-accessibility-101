@@ -47,6 +47,9 @@ class RecipeInstructionsViewController: UITableViewController {
     
     assert(recipe != nil)
     
+    backButton.accessibilityLabel = "back"
+    backButton.accessibilityTraits = UIAccessibilityTraitButton
+    
     isLikedFood(true)
     instructionViewModel = InstructionViewModel(recipe: recipe, type: .ingredient)
     setupRecipe()
@@ -61,11 +64,15 @@ class RecipeInstructionsViewController: UITableViewController {
   
   func isLikedFood(_ liked: Bool) {
     if liked {
-      likeButton.setTitle("😍", for: .normal)
-      didLikeFood = true
+        likeButton.setTitle("😍", for: .normal)
+        likeButton.accessibilityLabel = "Like"
+        likeButton.accessibilityTraits = UIAccessibilityTraitButton
+        didLikeFood = true
     } else {
-      likeButton.setTitle("😖", for: .normal)
-      didLikeFood = false
+        likeButton.setTitle("😖", for: .normal)
+        likeButton.accessibilityLabel = "Dislike"
+        likeButton.accessibilityTraits = UIAccessibilityTraitButton
+        didLikeFood = false
     }
   }
   
